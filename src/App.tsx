@@ -27,6 +27,7 @@ function App() {
         value={value}
         onChange={onChange}
         error={error}
+        hasClear
         placeholder="请输入QQ号进行查询"
       />
       <Info

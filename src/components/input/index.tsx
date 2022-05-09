@@ -19,12 +19,15 @@ const Input: FC<InputProps> = (props) => {
     ...other
   } = props;
   const [value, setValue] = useState(initValue || valueProps);
-  const [clearVisible, setClearVisible] = useState(!!value);
+  const [clearVisible, setClearVisible] = useState(!!value && hasClear);
 
   useEffect(() => {
     setValue(valueProps);
-    setClearVisible(!!valueProps)
   }, [valueProps]);
+
+  useEffect(() => {
+    setClearVisible(!!valueProps && hasClear)
+  }, [valueProps, hasClear]);
 
   const handleChange = useCallback((e: ChangeEvent<HTMLInputElement>) => {
     onChange && onChange(e.target.value);

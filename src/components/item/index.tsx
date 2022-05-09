@@ -33,7 +33,6 @@ const Item: FC<ItemProps> = (props) => {
       <div>
         <Input
           size="m"
-          hasClear
           value={value}
           onChange={onChange}
           data-testid="test-input"
