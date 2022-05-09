@@ -1,0 +1,17 @@
+
+.label-wrapper {
+  min-width: 40px;
+  text-align: right;
+}
+.label {
+  line-height: 32px;
+  margin-right: 8px;
+}
+.zzq-item {
+  display: flex;
+}
+.zzq-item-explain-error {
+  min-height: 24px;
+  line-height: 24px;
+  color: red;
+}

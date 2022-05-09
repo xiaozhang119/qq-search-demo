@@ -1,0 +1,32 @@
+
+.zzq-spin {
+  position: relative;
+  display: inline-block;
+}
+@keyframes loading {
+  from {transform: rotate(0deg)}
+  to {transform: rotate(360deg)}
+}
+.zzq-spin .zzq-spin-wrapper {
+  display: inline-block;
+  vertical-align: top;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+.zzq-spin .zzq-spin-icon {
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
+  left: 0;
+  top: 0;
+  color: rgb(24, 144, 255);
+  display: inline-block;
+  vertical-align: top;
+  animation: loading 1s infinite linear;
+}

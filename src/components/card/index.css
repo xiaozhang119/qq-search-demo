@@ -1,0 +1,26 @@
+
+.zzq-card {
+  padding: 16px;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+.zzq-card-ghost {
+  padding: 0;
+  background: none;
+}
+
+.zzq-card .zzq-card-header {
+  width: 100%;
+  line-height: 40px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.zzq-card-body {
+  display: flex;
+  flex-direction: column;
+}
+.zzq-card-body-row {
+  flex-direction: row;
+}
